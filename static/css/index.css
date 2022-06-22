@@ -1,117 +1,4 @@
-#fb-button {
-  background: #5890ff;
-  color: white;
-}
-
-#fb-button:hover {
-  background: #4267b2;
-  color: white;
-}
-
-#twt-button {
-  background: white;
-  color: #1da1f2;
-}
-
-#twt-button:hover {
-  background: #1da1f2;
-  color: white;
-}
-
-#ig-button {
-  background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-  color: white;
-}
-
-#dcard-button {
-  background: #3397cf;
-  color: white;
-}
-
-#dcard-button:hover {
-  background: #006aa6;
-  color: white;
-}
-
-#github-button {
-  background: #24292e;
-  color: white;
-}
-
-#medium-button {
-  background: #1f1f1f;
-  color: white;
-}
-
-#medium-button:hover {
-  background: #e8f3ec;
-  color: #1c1b1a;
-}
-
-#linkedin-button {
-  background: #008cc9;
-  color: white;
-}
-
-#linkedin-button:hover {
-  background: #0077b5;
-  color: white;
-}
-
-#spotify-button {
-  background: #1db954;
-  color: white;
-}
-
-#spotify-button:hover {
-  background: #1ed760;
-  color: white;
-}
-
-#youtube-button {
-  background: white;
-  color: #ff0000;
-}
-
-#youtube-button:hover {
-  background: #ff0000;
-  color: white;
-}
-
-#tblr-button {
-  background: #529ecc;
-  color: white;
-}
-
-#tblr-button:hover {
-  background: #36465d;
-  color: white;
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&display=swap");
 
 * {
   font-family: "Noto Sans TC", sans-serif;
@@ -145,24 +32,22 @@ body {
   border-width: 5px !important;
 }
 
-.item-button {
+.item {
   box-shadow: none;
   text-align: left !important;
 }
 
-.item-button * {
+.item * {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
 
-.item-thumb {
-  width: 3rem;
-  height: 3rem;
-}
-
-.item-thumb img {
-  width: 100%;
-  height: 100%;
+.item-logo {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .item-label-group {
@@ -191,17 +76,17 @@ body {
   /*transition: all .1s ease-in-out;*/
 }
 
-.item-button:hover {
+.item:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-.item-button:hover p {
+.item:hover p {
   padding-top: 1.25rem;
   padding-bottom: 0.25rem;
   color: inherit;
 }
 
-.item-button:hover label {
+.item:hover label {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-size: 12px;
@@ -209,4 +94,142 @@ body {
 
 span.line {
   display: inline-block;
+}
+
+/* 
+Begin: Item Specific Styles
+*/
+
+#facebook-button {
+  background: #5890ff;
+  color: white;
+}
+
+#facebook-button:hover {
+  background: #4267b2;
+  color: white;
+}
+
+#facebook-logo {
+  background-image: url("https://api.iconify.design/simple-icons/facebook.svg?color=white");
+}
+
+#twitter-button {
+  background: #1da1f2;
+  color: white;
+}
+
+#twitter-button:hover {
+  background: white;
+  color: #1da1f2;
+}
+
+#twitter-logo {
+  background-image: url("https://api.iconify.design/simple-icons/twitter.svg?color=white");
+}
+
+#twitter-button:hover #twitter-logo {
+  background-image: url("https://api.iconify.design/simple-icons/twitter.svg?color=%231da1f2");
+}
+
+#instagram-button {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: white;
+}
+
+#instagram-logo {
+  background-image: url("https://api.iconify.design/simple-icons/instagram.svg?color=white");
+}
+
+#github-button {
+  background: #24292e;
+  color: white;
+}
+
+#github-logo {
+  background-image: url("https://api.iconify.design/simple-icons/github.svg?color=white");
+}
+
+#linkedin-button {
+  background: #008cc9;
+  color: white;
+}
+
+#linkedin-button:hover {
+  background: #0077b5;
+  color: white;
+}
+
+#linkedin-logo {
+  background-image: url("https://api.iconify.design/simple-icons/linkedin.svg?color=white");
+}
+
+#glass-button {
+  background: black;
+  color: white;
+}
+
+#glass-button:hover {
+  background: white;
+  color: black;
+}
+
+#glass-logo {
+  background-image: url("https://glass.photo/apple-touch-icon.png");
+}
+
+#medium-button {
+  background: #1f1f1f;
+  color: #e8f3ec;
+}
+
+#medium-button:hover {
+  background: #e8f3ec;
+  color: #1c1b1a;
+}
+
+#medium-logo {
+  background-image: url("https://api.iconify.design/simple-icons/medium.svg?color=%23e8f3ec");
+}
+
+#medium-button:hover #medium-logo {
+  background-image: url("https://api.iconify.design/simple-icons/medium.svg?color=%231f1f1f");
+}
+
+#spotify-button {
+  background: #1db954;
+  color: white;
+}
+
+#spotify-button:hover {
+  background: #1ed760;
+  color: white;
+}
+
+#spotify-logo {
+  background-image: url("https://api.iconify.design/simple-icons/spotify.svg?color=white");
+}
+
+#youtube-button {
+  background: red;
+  color: white;
+}
+
+#youtube-button:hover {
+  background: white;
+  color: red;
+}
+
+#youtube-logo {
+  background-image: url("https://api.iconify.design/simple-icons/youtube.svg?color=white");
+}
+
+#youtube-button:hover #youtube-logo {
+  background-image: url("https://api.iconify.design/simple-icons/youtube.svg?color=red");
 }
